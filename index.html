@@ -1,126 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<title>
-			Tharaka Dhananjaya
-		</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Calculator</title>
 		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<header class="headline">
-			<h1>Hi, I'm THARAKA DHANANJAYA</h1>
-			<h2>Web Developer & Computer Science Student.</h2>
-			<p>I design and build responsive, modern websites using HTML, CSS, and WordPress. I focus on clean design, fast performance, and user-friendly experiences.</p>
-			<div class="cta">
-				<a href="#">View My Work</a>
-				<a href="#">Contact Me</a>
+		<div class="main-container">
+			<input type="text" id="display" disabled>
+			<div class="main">	<div class="coloumn-1">
+				<button onclick="press('1')">1</button>
+				<button onclick="press('2')">2</button>
+				<button onclick="press('3')">3</button>
+				<button onclick="press('4')">4</button>
 			</div>
-		</header>
-		<div class="about-me">
-			<h2>About Me</h2>
-			<p>Hello! I’m Tharaka Dhananjaya, a Computer Science undergraduate at Saegis Campus. I’m passionate about creating websites that combine creativity and functionality.I specialize in front-end web development and WordPress customization. My goal is to help small businesses, freelancers, and startups build a strong online presence through modern, professional websites.When I’m not coding, I enjoy learning new technologies and improving my design skills.</p>
-			<div class="info">
-				<h3>Quick Info</h3>
-				<div class="quick-info">
-					<dl>
-						<dt>Education</dt>
-						<dd>BSc (Hons) in Computer Science — Saegis Campus (2023–Present)</dd>
+			<div class="coloumn-2">
+				<button onclick="press('5')">5</button>
+				<button onclick="press('6')">6</button>
+				<button onclick="press('7')">7</button>
+				<button onclick="press('8')">8</button>
+			</div>
+			<div class="coloumn-3">
+				<button onclick="press('9')">9</button>
+				<button onclick="press('0')">0</button>
+				<button onclick="cleardisplay()">C</button>
+				<button onclick="calculate()">=</button>
 
-						<dt>Current Role</dt>
-						<dd>Freelance Web Developer</dd>
-						<dt>Based in</dt>
-						<dd>Sri Lanka</dd>
-						<dt>Languages</dt>
-						<dd>English, Sinhala</dd>
-					</dl>
-				</div>
 			</div>
+			<div class="coloumn-4">
+				<button onclick="press('+')">+</button>
+				<button onclick="press('-')">-</button>
+				<button onclick="press('*')">*</button>
+				<button onclick="press('/')">/</button>
+			</div></div>
 		</div>
-		<div class="skill">
-			<h2>My Skills</h2>
-			<p>I combine technical knowledge with creative design to deliver high-quality projects.</p>
-			<div class="skill-container">
-				<div class="technical">
-					<h3>Technical Skills</h3>
-					<ul>
-						<li>HTML5, CSS3</li>
-						<li>WordPress</li>
-						<li>Web Design</li>
-						<li>Git &amp; GitHub</li>
-						<li>Canva</li>
-					</ul>
-				</div>
-				<div class="soft">
-					<h3>Soft Skills</h3>
-					<ul>
-						<li>Problem Solving</li>
-						<li>Communication</li>
-						<li>Time Management</li>
-						<li>Continuous Learning</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="project">
-			<h2>My Projects</h2>
-		  <div class="p-container">
-			<div class="project-1">
-				<h3>Portfolio Website</h3>
-				<p>A clean and modern personal portfolio website built using HTML and CSS</p>
-				<p><b>Technologies :</b>HTML , CSS</p>
-				<a href="">View Demo</a>
-			</div>
-			<div class="project-1">
-				<h3>Portfolio Website</h3>
-				<p>A clean and modern personal portfolio website built using HTML and CSS</p>
-				<p><b>Technologies :</b>HTML , CSS</p>
-				<a href="">View Demo</a>
-			</div>
-			<div class="project-1">
-				<h3>Portfolio Website</h3>
-				<p>A clean and modern personal portfolio website built using HTML and CSS</p>
-				<p><b>Technologies :</b>HTML , CSS</p>
-				<a href="">View Demo</a>
-			</div>
-		  </div>
-		</div>
-		<div class="edu">
-			<h2>Education</h2>
-			<div class="education">
-				<h3>BSc (Hons) in Computer Science</h3>
-				<div class="sub-edu">
-					<p>Saegis Campus.</p>
-					<p>2025-present</p>
-					<a href="">Saegis Campus</a>
-					<a href="to:saegis.email.com">Email</a>
-				</div>
-			</div>
-		</div>
-		<div class="contact">
-			<h2>Get In Touch</h2>
-			<p>i'm always open to new oppotunities and freelance projects. ifyou need a professional website or want to collaborate,feel free to reach out.</p>
-			<div class="reach">
-				<h3>Contact Info</h3>
-				<div class="contact-info">
-					<ul>
-						<li><a href="">Email</a></li>
-						<li><a href="">Fiverr</a></li>
-						<li><a href="">GitHub</a></li>
-						<li><a href="">LinkedIn</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<footer>
-			<p>&copy; 2025 Tharaka Dhananjaya.All rights reserved.Built with HTML and CSS</p>
-		</footer>
+		<script src="app.js">
+		</script>
 	</body>
 </html>
-
-
-		
-
 
